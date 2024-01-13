@@ -16,16 +16,15 @@ const DomainPage: React.FC = () => {
             <Navbar />
 
             {/* Hero */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden mt-32 mb-24">
                 <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
                     <div className="max-w-2xl text-center mx-auto">
                         <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">
-                            Designed for you to get more{" "}
-                            <span className="text-blue-600">simple</span>
+                            The Collective Spirit of{" "}
+                            <span className="text-blue-600">IEEE</span>
                         </h1>
                         <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
-                            Build your business here. Take it anywhere.
-                        </p>
+                            Explore the diverse realms of our club, where innovation, creativity, and collaboration converge to create an extraordinary tapestry.                        </p>
                     </div>
                 </div>
             </div>
