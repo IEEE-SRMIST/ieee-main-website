@@ -11,7 +11,7 @@ import EventTestimonials from '@/app/components/Events/EventTestimonials/EventTe
 
 import '../app/globals.css';
 
-const DomainPage: React.FC = () => {
+const EventsPage: React.FC = () => {
     return (
         <div>
             <Navbar />
@@ -43,4 +43,4 @@ const DomainPage: React.FC = () => {
     );
 };
 
-export default DomainPage;
+export default EventsPage;
