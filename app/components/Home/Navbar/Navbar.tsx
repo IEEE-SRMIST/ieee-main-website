@@ -16,7 +16,7 @@ const Navbar = () => {
                             href="#"
                             aria-label="Brand"
                         >
-                            Brand
+                            IEEE SRM
                         </a>
                         <div className="md:hidden">
                             <button
