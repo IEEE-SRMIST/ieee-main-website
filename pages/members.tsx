@@ -18,7 +18,7 @@ const MembersPage: React.FC = () => {
             <div className="relative overflow-hidden">
                 <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
                     <div className="max-w-2xl text-center mx-auto">
-                        <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">
+                        <h1 className="block text-xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">
                             Designed for you to get more{" "}
                             <span className="text-blue-600">simple</span>
                         </h1>
