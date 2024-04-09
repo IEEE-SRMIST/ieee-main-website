@@ -13,7 +13,6 @@ import RecentBlogs from './components/Home/RecentBlogs/RecentBlogs';
 import Testimonial from './components/Home/Testimonial/Testimonial';
 import FAQ from './components/Home/FAQ/FAQ';
 import SponsorList from './components/Home/SponsorList/SponsorList';
-import FooterLogo from './components/Home/FooterLogo/FooterLogo';
 import Footer from './components/Home/Footer/Footer';
 
 import '../app/globals.css';
@@ -34,7 +33,6 @@ const HomePage: React.FC = () => {
       <Testimonial />
       <FAQ />
       <SponsorList />
-      <FooterLogo />
 
       <Footer />
     </div>
