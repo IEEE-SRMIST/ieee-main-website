@@ -4,9 +4,9 @@ const FAQ = () => {
     return (
         <div>
 
-            {/* FAQ */}
-            <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                {/* Grid */}
+
+            <div className="bg-green-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+
                 <div className="grid md:grid-cols-5 gap-10">
                     <div className="md:col-span-2">
                         <div className="max-w-xs">
@@ -20,9 +20,9 @@ const FAQ = () => {
                             </p>
                         </div>
                     </div>
-                    {/* End Col */}
+
                     <div className="md:col-span-3">
-                        {/* Accordion */}
+
                         <div className="hs-accordion-group divide-y divide-gray-200 dark:divide-gray-700">
                             <div
                                 className="hs-accordion pb-3 active"
@@ -327,13 +327,13 @@ const FAQ = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* End Accordion */}
+
                     </div>
-                    {/* End Col */}
+
                 </div>
-                {/* End Grid */}
+
             </div>
-            {/* End FAQ */}
+
 
         </div>
     )

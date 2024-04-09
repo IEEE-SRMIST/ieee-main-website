@@ -4,9 +4,9 @@ const RecentBlogs = () => {
     return (
         <div>
 
-            {/* Card Blog */}
-            <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                {/* Title */}
+
+            <div className="bg-green-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+
                 <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
                     <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
                         Insights
@@ -15,10 +15,9 @@ const RecentBlogs = () => {
                         Stay in the know with insights from industry experts.
                     </p>
                 </div>
-                {/* End Title */}
-                {/* Grid */}
+
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {/* Card */}
+ 
                     <a
                         className="group dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                         href="#"
@@ -60,8 +59,7 @@ const RecentBlogs = () => {
                             </p>
                         </div>
                     </a>
-                    {/* End Card */}
-                    {/* Card */}
+
                     <a
                         className="group dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                         href="#"
@@ -100,8 +98,7 @@ const RecentBlogs = () => {
                             </p>
                         </div>
                     </a>
-                    {/* End Card */}
-                    {/* Card */}
+
                     <a
                         className="group relative flex flex-col w-full min-h-[15rem] bg-center bg-cover rounded-xl hover:shadow-lg transition bg-[url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80')] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                         href="#"
@@ -132,11 +129,11 @@ const RecentBlogs = () => {
                             </div>
                         </div>
                     </a>
-                    {/* End Card */}
+
                 </div>
-                {/* End Grid */}
+
             </div>
-            {/* End Card Blog */}
+
 
         </div>
     )

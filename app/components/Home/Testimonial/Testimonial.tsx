@@ -5,7 +5,7 @@ const Testimonial = () => {
         <div>
 
             <section className="bg-white">
-                <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+                <div className="bg-blue-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
                     <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                         Read trusted reviews from our customers
                     </h2>

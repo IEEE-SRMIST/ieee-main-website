@@ -4,11 +4,11 @@ const PopularEvents = () => {
     return (
         <div>
 
-            {/* Card Blog */}
-            <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                {/* Grid */}
+
+            <div className="bg-blue-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+
                 <div className="grid lg:grid-cols-2 gap-6">
-                    {/* Card */}
+
                     <a
                         className="group sm:flex rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                         href="#"
@@ -34,7 +34,7 @@ const PopularEvents = () => {
                                     Great news we're eager to share.
                                 </p>
                                 <div className="mt-5 sm:mt-auto">
-                                    {/* Avatar */}
+
                                     <div className="flex items-center">
                                         <div className="flex-shrink-0">
                                             <img
@@ -50,13 +50,12 @@ const PopularEvents = () => {
                                             <p className="text-xs text-gray-500">Feb 15, 2021</p>
                                         </div>
                                     </div>
-                                    {/* End Avatar */}
+
                                 </div>
                             </div>
                         </div>
                     </a>
-                    {/* End Card */}
-                    {/* Card */}
+
                     <a
                         className="group sm:flex rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                         href="#"
@@ -82,7 +81,7 @@ const PopularEvents = () => {
                                     At Wake, our mission has always been focused on bringing openness.
                                 </p>
                                 <div className="mt-5 sm:mt-auto">
-                                    {/* Avatar */}
+
                                     <div className="flex items-center">
                                         <div className="flex-shrink-0">
                                             <img
@@ -98,16 +97,16 @@ const PopularEvents = () => {
                                             <p className="text-xs text-gray-500">Feb 4, 2021</p>
                                         </div>
                                     </div>
-                                    {/* End Avatar */}
+
                                 </div>
                             </div>
                         </div>
                     </a>
-                    {/* End Card */}
+
                 </div>
-                {/* End Grid */}
+
             </div>
-            {/* End Card Blog */}
+
 
         </div>
     )

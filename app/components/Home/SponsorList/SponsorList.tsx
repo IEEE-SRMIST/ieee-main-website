@@ -4,15 +4,15 @@ const SponsorList = () => {
     return (
         <div>
 
-            {/* Clients */}
-            <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                {/* Title */}
+
+            <div className="bg-red-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+
                 <div className="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
                     <h2 className="text-gray-600 dark:text-gray-400">
                         Trusted by Open Source, enterprise, and more than 99,000 of you
                     </h2>
                 </div>
-                {/* End Title */}
+
                 <div className="flex justify-center gap-x-6 sm:gap-x-12 lg:gap-x-24">
                     <svg
                         className="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-gray-500"
@@ -82,7 +82,7 @@ const SponsorList = () => {
                     </svg>
                 </div>
             </div>
-            {/* End Clients */}
+
 
         </div>
     )
