@@ -101,17 +101,16 @@ const PopularEvents = () => {
                                 <div className="mb-3">
                                     <p className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
 
-                                        <Link href="hacktrix.ieeesrmist.com">Technozest</Link>
+                                        <Link href="concepto.ieeesrmist.in">Concepto</Link>
                                     </p>
                                 </div>
                                 <h4 className="font-sans font-semibold text-black text-2xl sm:text-4xl group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
-                                    TECHNOZEST
+                                    CONCEPTO
                                 </h4>
                                 <p className="mt-2 mb-2 font-sans font-normal text-black text-justify lg:text-base">
-                                    Techno Zest, hosted by IEEE SRMIST Student Branch, is an event brimming with tech events
-                                    and workshops. Participants delve into various aspects of technology, from coding to robotics,
-                                    through engaging sessions and hands-on activities. It's a platform for students to enhance their
-                                    skills, exchange knowledge, and foster innovation in a dynamic setting.
+                                    Concepto, a technical event organized by the TECHNOCRATS TEAM of IEEE SRM Student
+                                    Branch, offers participants an opportunity to delve into PLC programming basics and its
+                                    practical applications.
                                 </p>
                                 <div className="mt-5 sm:mt-auto">
                                 </div>
@@ -135,17 +134,16 @@ const PopularEvents = () => {
                                 <div className="mb-3">
                                     <p className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
 
-                                        <Link href="hacktrix.ieeesrmist.com">Hyperforge</Link>
+                                        <Link href="concepto.ieeesrmist.in">Concepto</Link>
                                     </p>
                                 </div>
                                 <h4 className="font-sans font-semibold text-black text-2xl sm:text-4xl group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
-                                    HYPERFORGE
+                                    CONCEPTO
                                 </h4>
                                 <p className="mt-2 mb-2 font-sans font-normal text-black text-justify lg:text-base">
-                                    Hyper Forge, organized by IEEE SRMIST Student Branch, is a blockchain workshop aimed at
-                                    equipping participants with in-depth knowledge and practical skills in blockchain technology.
-                                    Hyper Forge offers a unique opportunity for individuals to delve into the intricacies of blockchain
-                                    technology and its potential for revolutionizing industries.
+                                    Concepto, a technical event organized by the TECHNOCRATS TEAM of IEEE SRM Student
+                                    Branch, offers participants an opportunity to delve into PLC programming basics and its
+                                    practical applications.
                                 </p>
                                 <div className="mt-5 sm:mt-auto">
                                 </div>
