@@ -23,12 +23,9 @@ const HomePage: React.FC = () => {
       <Navbar />
 
       <Hero />
-      <GallerySlide />
       <AboutClub />
       <QuickLinks />
       <PopularEvents />
-      <LatestNews />
-      <FeaturedActivities />
       <RecentBlogs />
       <Testimonial />
       <FAQ />
