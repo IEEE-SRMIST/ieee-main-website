@@ -14,7 +14,7 @@ const Navbar = () => {
     // </header>
 
 <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b border-gray-100 py-4 sm:py-0 dark:bg-gray-800 bg-gray-100 sticky top-0">
-  <nav className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-12 h-15" aria-label="Global">
+  <nav className="relative max-w-8xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-12 h-15" aria-label="Global">
     <div className="flex items-center justify-between">
       <a href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl dark:text-white" aria-label="logo">
         <img
