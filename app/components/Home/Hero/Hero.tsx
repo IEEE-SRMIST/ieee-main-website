@@ -12,7 +12,7 @@ const Hero = () => {
                 />
                 <div className="relative flex flex-col items-center p-6 sm:max-w-xl">
                     <h1 className="mb-4 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">
-                        Innovate. Edify. Experience. Excel
+                        Innovate.
                     </h1>
                     <div className="animate-bounce text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
