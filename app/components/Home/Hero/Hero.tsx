@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className="bg-green-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+        <div className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
             <section className="relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 shadow-lg py-36 md:py-48">
                 <img
                     src="/img/Hero_Baner.jpg"
@@ -12,7 +12,7 @@ const Hero = () => {
                 />
                 <div className="relative flex flex-col items-center p-6 sm:max-w-xl">
                     <h1 className="mb-4 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">
-                        Innovate.
+                        Innovate. Edify. Experience. Excel
                     </h1>
                     <div className="animate-bounce text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
