@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b py-4 sm:py-0 dark:bg-black bg-white sticky top-0">
-      <nav className="relative max-w-9xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-12 h-15" aria-label="Global">
+      <nav className="relative max-w-9xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-12 h-20" aria-label="Global">
         <div className="flex items-end justify-between">
           <a href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl text-black dark:text-white" aria-label="logo">
             <img
