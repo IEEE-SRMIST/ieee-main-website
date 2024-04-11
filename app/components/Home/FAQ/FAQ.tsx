@@ -8,8 +8,8 @@ const FAQ = () => {
     };
 
     return (
-        <div>
-            <div className="bg-green-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+        <div style={{ background: '#dfe3e9' }}>
+            <div className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
                 <div className="grid md:grid-cols-5 gap-10">
                     <div className="md:col-span-2">
                         <div className="max-w-xs">
@@ -26,7 +26,7 @@ const FAQ = () => {
                     <div className="md:col-span-3">
                         <div className="hs-accordion-group divide-y divide-gray-200 dark:divide-gray-700">
                             {faqData.map((item, index) => (
-                                <div key={index} className="hs-accordion pt-6 pb-3">
+                                <div key={index} className="hs-accordion pt-6 pb-3" style={{ background: '#cfd4de', borderRadius: '10px', boxShadow: activeAccordion === index ? '0 0 10px rgba(0, 0, 255, 0.5)' : 'none' }}>
                                     <button
                                         className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                         aria-controls={`accordion-content-${index}`}
