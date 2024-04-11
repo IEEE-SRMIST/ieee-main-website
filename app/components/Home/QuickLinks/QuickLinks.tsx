@@ -1,27 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-interface socialProps {
-    imageSrc: string,
-    name: string,
-    desp: string,
-    link: string
+interface SocialProps {
+    imageSrc: string;
+    name: string;
+    desp: string;
+    link: string;
 }
 
-const Social: React.FC<socialProps> = ({imageSrc, name, desp, link}) => {
+const Social: React.FC<SocialProps> = ({ imageSrc, name, desp, link }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
     return (
-        <div className="relative bg-gray-100 rounded-lg overflow-hidden">
-            <div className="flex flex-col justify-center items-center bg-white p-4">
-                <img src="/socials/group.png" alt="Logo" className="h-8" />
-                <a href="#" className="font-bold text-gray-800 transition duration-100 hover:text-gray-500 block mt-2 text-lg">
-                    {name}
-                </a>
-                <p className="text-sm text-gray-500 lg:text-base mt-1">
-                    {desp}
-                </p>
+        <div
+            className='relative rounded-lg overflow-hidden mx-10'
+            style={{
+                background: '#DFE3E9',
+                transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+                transition: 'transform 0.3s ease-in-out',
+            }}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
+            <div className="flex flex-col justify-center items-center p-4">
+                <img
+                    src={imageSrc}
+                    alt="Logo"
+                    className={`h-8 ${isHovered ? 'grayscale-0' : 'grayscale'} transition duration-200`}
+                />
+                <h3 className="font-bold text-gray-800 block mt-3 text-lg">{name}</h3>
+                <p className="text-sm text-gray-500 lg:text-base mt-2">{desp}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 const QuickLinks = () => {
 
