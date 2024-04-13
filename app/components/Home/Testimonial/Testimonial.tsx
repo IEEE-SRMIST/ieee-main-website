@@ -2,54 +2,83 @@ import React from 'react';
 
 const Testimonial = () => {
     return (
-        <section className="bg-dfe3e9">
-            <div className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
-                <div className="bg-cfd4de rounded-lg overflow-hidden">
-                    <h3 className="mb-2 sm:mb-4 font-semibold text-blue-800 text-xs lg:text-base text-center pt-4">
-                        TESTIMONIALS
-                    </h3>
-                    <h2 className="mb-4 md:mb-6 font-bold text-black text-2xl sm:text-4xl text-center">
-                        Know more about us
-                    </h2>
-                    <p className="mx-auto max-w-[64rem] font-normal text-black text-sm sm:text-lg text-center pb-6 px-4">
-                        Join a community of more than 450,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate
-                    </p>
+        <>
+            <div className="hidden md:block w-[1350px] h-[722px] px-8 py-[52px] bg-zinc-200 dark:bg-black rounded-[60px] flex flex-col justify-start items-start gap-5">
+                <div className="w-[335px] h-[102px] text-black dark:text-white text-2xl font-bold font-cinzel leading-[30px]">
+                    TESTIMONIALS
                 </div>
-                <div className="mt-8 flex flex-col gap-8 md:flex-row md:justify-center">
-                    <div className="w-full md:w-1/2 group">
-                        <blockquote className="testimonial-blockquote rounded-lg bg-cfd4de p-6 shadow-md flex flex-col md:flex-row items-center transition duration-300 ease-in-out transform group-hover:shadow-lg">
-                            <img
-                                alt="Man"
-                                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                                className="h-40 w-40 rounded-full object-cover mb-6 md:mb-0 md:mr-6"
-                            />
-                            <div>
-                                <p className="mt-0.5 font-normal text-black text-sm sm:text-base">Paul Starr</p>
-                                <p className="mt-2 font-normal text-black text-xs sm:text-sm text-justify">
-                                    Being part of the IEEE Student Branch has been an incredible experience. The opportunities for networking, learning, and professional development are unparalleled. I've made lifelong friends and gained invaluable skills that have helped me in my academic and professional journey.
-                                </p>
-                            </div>
-                        </blockquote>
+                <div className="w-[1312px] h-[496px] px-2.5 py-[52px] bg-white rounded-[30px] shadow border-8 border-gray-300 border-opacity-95 flex justify-center items-center gap-[30px]">
+                    <div className="w-[200px] h-[272px] p-[10px] bg-white bg-opacity-0 flex flex-col justify-start items-center gap-2.5">
+                        <div className="w-[174.50px] h-[174.50px] relative">
+                            <div className="w-[174.50px] h-[174.50px] left-0 top-0 absolute bg-gray-300 rounded-full" />
+                            <img className="w-[173px] h-[220px] left-0 top-[-27px] absolute rounded-full" src="" alt="Profile" />
+                        </div>
+                        <div className="w-[185px] h-[77px] text-right">
+                            <span className="text-black text-base font-normal font-sora leading-[30px]">- Nishanth Rao<br /></span>
+                            <span className="text-black text-base font-semibold font-sora leading-[30px]">Director</span>
+                        </div>
                     </div>
-                    <div className="w-full md:w-1/2 group">
-                        <blockquote className="testimonial-blockquote rounded-lg bg-cfd4de p-6 shadow-md flex flex-col md:flex-row items-center transition duration-300 ease-in-out transform group-hover:shadow-lg">
-                            <img
-                                alt="Man"
-                                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                                className="h-40 w-40 rounded-full object-cover mb-6 md:mb-0 md:mr-6"
-                            />
-                            <div>
-                                <p className="mt-0.5 font-normal text-black text-sm sm:text-base">Paul Starr</p>
-                                <p className="mt-2 font-normal text-black text-xs sm:text-sm text-justify">
-                                    Joining the IEEE Student Branch was one of the best decisions I made in college. The events, workshops, and seminars organized by the branch have broadened my understanding of various technical topics and allowed me to stay updated with the latest trends in my field.
-                                </p>
-                            </div>
-                        </blockquote>
+                    <div className="w-[390px] h-[315px] p-[15px] bg-gray-300 rounded-[10px] shadow border-2 border-white justify-center items-start gap-2.5 flex">
+                        <div className="w-[370px] h-[247px] text-justify text-black text-base font-normal font-sora leading-[30px]">
+                            "Being part of the IEEE Student Branch has been an incredible experience. The opportunities for networking, learning, and professional development are unparalleled. I've made lifelong friends and gained invaluable skills that have helped me in my academic and professional journey."
+                        </div>
+                    </div>
+                    <div className="w-[390px] h-[315px] p-[15px] bg-gray-300 rounded-[10px] shadow border-2 border-white justify-center items-start gap-2.5 flex">
+                        <div className="w-[370px] h-[239px] text-black text-base font-normal font-sora leading-[30px]">
+                            The IEEE Student Branch has been my home away from home throughout my college journey. The friendships I've formed and the experiences I've gained through my involvement in the branch will always hold a special place in my heart. I'm grateful for the memories and opportunities that the branch has provided me.
+                        </div>
+                    </div>
+                    <div className="w-[200px] h-[272px] p-[15px] bg-white bg-opacity-0 flex flex-col justify-start items-center gap-2.5">
+                        <div className="w-[174.50px] h-[174.50px] relative">
+                            <div className="w-[174.50px] h-[174.50px] left-0 top-0 absolute bg-gray-300 rounded-full" />
+                            <img className="w-[173px] h-[220px] left-[-26px]  top-[-27px] absolute rounded-full" src="" alt="Profile" />
+                        </div>
+                        <div className="w-[185px] h-[77px] text-right">
+                            <span className="text-black text-base font-normal font-sora leading-[30px]">-Rohan Kumar<br /></span>
+                            <span className="text-black text-base font-semibold font-sora leading-[30px]">Chairperson</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <div className="block md:hidden w-[398px] h-[861px] px-8 py-[52px] bg-zinc-200 rounded-[30px] flex-col justify-start items-center gap-5 inline-flex">
+                <div className="w-[335px] h-[41px] text-black text-xl font-bold font-cinzel leading-[30px]">TESTIMONIALS</div>
+                <div className="w-[335px] h-[661px] px-2.5 py-[26px] bg-white rounded-[30px] shadow border-8 border-gray-300 border-opacity-95 flex-col justify-center items-center gap-[15px] flex">
+                    <div className="w-[136px] h-[169px] p-[15px] bg-white bg-opacity-0 flex-col justify-start items-center gap-2.5 flex">
+                        <div className="w-28 h-[113px] relative">
+                            <div className="w-28 h-[113px] left-0 top-0 absolute bg-gray-300 rounded-full" />
+                            <img className="w-[135px] h-[174px] left-0 top-[-26px] absolute" src="https://via.placeholder.com/135x174" />
+                        </div>
+                        <div className="w-[135px] h-[47px] text-center"><span className="text-black text-[8px] font-normal font-sora leading-[15px]">- Nishanth Rao<br/></span><span className="text-black text-[8px] font-semibold font-sora leading-[15px]">Director</span></div>
+                    </div>
+                    <div className="w-[266px] h-[123px] p-[15px] bg-gray-300 rounded-[10px] shadow border-2 border-white justify-center items-start gap-2.5 inline-flex">
+                        <div className="w-[236px] h-[247px] text-justify text-black text-[8px] font-normal font-sora leading-[15px]">"Being part of the IEEE Student Branch has been an incredible experience. The opportunities for networking, learning, and professional development are unparalleled. I've made lifelong friends and gained invaluable skills that have helped me in my academic and professional journey."        </div>
+                    </div>
+                    <div className="w-[266px] h-[123px] p-[15px] bg-gray-300 rounded-[10px] shadow border-2 border-white justify-center items-start gap-2.5 inline-flex">
+                        <div className="w-[237px] h-[239px] text-justify text-black text-[8px] font-normal font-sora leading-[15px]">The IEEE Student Branch has been my home away from home throughout my college journey. The friendships I've formed and the experiences I've gained through my involvement in the branch will always hold a special place in my heart. I'm grateful for the memories and opportunities that the branch has provided me        </div>
+                    </div>
+                    <div className="w-[136px] h-[173px] p-[15px] bg-white bg-opacity-0 flex-col justify-start items-center gap-2.5 flex">
+                        <div className="w-28 h-28 relative">
+                            <div className="w-28 h-28 left-0 top-0 absolute bg-gray-300 rounded-full" />
+                            <img className="w-[230px] h-[294px] left-[-59px] top-[-35px] absolute" src="https://via.placeholder.com/230x294" />
+                        </div>
+                        <div className="w-[185px] h-[77px] text-center"><span className="text-black text-[8px] font-normal font-sora leading-[15px]">-Rohan Kumar<br/></span><span className="text-black text-[8px] font-semibold font-sora leading-[15px]">Chairperson</span></div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 
 export default Testimonial;
+
+
+
+
+
+
+
+
+
+
+
