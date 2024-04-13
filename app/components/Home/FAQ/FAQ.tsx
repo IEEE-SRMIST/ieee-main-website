@@ -26,7 +26,7 @@ const FAQ = () => {
                     <div className="md:col-span-3">
                         <div className="hs-accordion-group divide-y divide-gray-200 dark:divide-gray-700">
                             {faqData.map((item, index) => (
-                                <div key={index} className="hs-accordion pt-6 pb-3 mb-4" style={{ background: '#cfd4de', borderRadius: '10px', boxShadow: activeAccordion === index ? '0 0 10px rgba(0, 0, 255, 0.5)' : 'none' }}>
+                               <div key={index} className="hs-accordion pt-6 pb-3 mb-4 dark:bg-black bg-[#cfd4de]" style={{ borderRadius: '10px', boxShadow: activeAccordion === index ? '0 0 10px rgba(0, 0, 255, 0.5)' : 'none' }}>
                                     <button
                                         className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-700 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                         aria-controls={`accordion-content-${index}`}
