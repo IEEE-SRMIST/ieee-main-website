@@ -8,8 +8,8 @@ const FAQ = () => {
     };
 
     return (
-        <div style={{ background: '#dfe3e9' }}>
-            <div className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+        <div className={`dark:bg-zinc-950 bg-gray-300`}>
+           <div className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
                 <div className="grid md:grid-cols-5 gap-10">
                     <div className="md:col-span-2">
                         <div className="max-w-xs">
@@ -107,7 +107,7 @@ const faqData = [
         answer: "You can contact us through the contact information provided on our website or reach out to us via email or social media channels."
     },
     {
-        question: "HHow can I stay updated with the events and activities of the IEEE SRM SB?",
+        question: "How can I stay updated with the events and activities of the IEEE SRM SB?",
         answer: "You can stay updated by regularly visiting our website, following us on social media platforms, and subscribing to our newsletter for announcements about upcoming events and activities."
     }
 ];
