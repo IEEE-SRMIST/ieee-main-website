@@ -3,11 +3,11 @@ import React from 'react';
 const Testimonial = () => {
     return (
         <>
-            <div className="hidden md:block w-[1345px] h-[722px] px-8 py-[52px] bg-zinc-200 dark:bg-black rounded-[60px] flex flex-col justify-start items-start gap-5">
+            <div className="hidden md:block w-[1496px] h-[722px] px-8 py-[52px] bg-zinc-200 dark:bg-black rounded-[60px] flex flex-col justify-start items-start gap-5">
                 <div className="w-[335px] h-[102px] text-black dark:text-white text-2xl font-bold font-cinzel leading-[30px]">
                     TESTIMONIALS
                 </div>
-                <div className="w-[1300px] h-[496px] px-1.5 py-[52px] bg-white dark:bg-black rounded-[30px] shadow border-8 border-gray-300 dark:border-gray-400 border-opacity-95 flex justify-center items-center gap-[30px]">
+                <div className="w-[1368px] h-[496px] px-1.5 py-[52px] bg-white dark:bg-black rounded-[30px] shadow border-8 border-gray-300 dark:border-gray-400 border-opacity-95 flex justify-center items-center gap-[30px]">
                     <div className="w-[200px] h-[272px] p-[10px] bg-white bg-opacity-0 flex flex-col justify-start items-center gap-2.5">
                         <div className="w-[174.50px] h-[174.50px] relative">
                             <div className="w-[174.50px] h-[174.50px] left-0 top-0 absolute bg-gray-300 rounded-full" />
