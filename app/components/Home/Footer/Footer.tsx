@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import "./Footer.css";
 
 // <footer className="bg-blue-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
 //     <div className="text-center flex flex-col items-center">
@@ -52,24 +53,39 @@ const Footer = () => {
     <>
       {/* ========== FOOTER ========== */}
       <footer className="mt-auto w-full py-0 px-2 sm:px-6 lg:px-8 mx-auto dark:bg-black">
-        <div className="overflow-hidden w-full my-10">
-          <div className="marquee flex flex-row">
+        <section className="bg-white text-black my-10 mt-14 overflow-hidden">
+          <div className="footers-container">
+            <div className="footer">
+              <img
+                src={
+                  isDarkMode
+                    ? "/assests/footer/logo_dark.png"
+                    : "/assests/footer/logo_light.png"
+                }
+                alt="IEEE SRM SB logo"
+                className="h-[0.8rem] w-full lg:h-[2.5rem] "
+              />
+            </div>
+            <div className="footer">
             <img
-              src={
-                isDarkMode
-                  ? "/assests/footer/logo_dark.png"
-                  : "/assests/footer/logo_light.png"
-              }
-              alt="IEEE SRM SB logo"
-              className=" h-[1.7rem] lg:w-54 lg:h-[3rem]"
-            />
+                src={
+                  isDarkMode
+                    ? "/assests/footer/logo_dark.png"
+                    : "/assests/footer/logo_light.png"
+                }
+                alt="IEEE SRM SB logo"
+                className="h-[0.8rem] w-full lg:h-[2.5rem]"
+              />
+            </div>
           </div>
-        </div>
+        </section>
         <div className="mx-auto bg-[#D0DAF5] w-[75%] py-[1.5rem] lg:py-[4rem] rounded-lg">
           <div className="col-span-2">
             <div className="flex justify-center items-center w-[80%] mx-auto">
               <div className="flex flex-col lg:flex-row justify-between items-center gap-2 w-full">
-                <h4 className="text-xl mb-2 lg:mb-0 lg:text-2xl text-black">Wanna Connect with Us?</h4>
+                <h4 className="text-xl mb-2 lg:mb-0 lg:text-2xl text-black">
+                  Wanna Connect with Us?
+                </h4>
                 <form>
                   <div className=" flex flex-row items-center gap-2 sm:flex-row sm:gap-3 bg-black rounded-lg p-2 dark:bg-gray-800">
                     <div className="w-full">

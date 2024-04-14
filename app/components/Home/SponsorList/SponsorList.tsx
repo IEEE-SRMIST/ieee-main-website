@@ -85,7 +85,7 @@ const SponsorList = () => {
             </div> */}
         <div >
 
-            <section className="bg-white text-black mt-16 mb-16 overflow-hidden">
+            <section className="bg-white text-black my-8 overflow-hidden">
                 <div className="sponsors-container">
                     <div className="sponsor">
                         <img className="sponsor-logo" src="/img/Sponsors/badelog.png" alt="COMSOC" />
