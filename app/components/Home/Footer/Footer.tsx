@@ -63,18 +63,7 @@ const Footer = () => {
                     : "/assests/footer/logo_light.png"
                 }
                 alt="IEEE SRM SB logo"
-                className="h-[0.8rem] w-full lg:h-[2.5rem] "
-              />
-            </div>
-            <div className="footer">
-            <img
-                src={
-                  isDarkMode
-                    ? "/assests/footer/logo_dark.png"
-                    : "/assests/footer/logo_light.png"
-                }
-                alt="IEEE SRM SB logo"
-                className="h-[0.8rem] w-full lg:h-[2.5rem]"
+                className="h-[1.5rem] w-full lg:h-[2.8rem] "
               />
             </div>
           </div>
