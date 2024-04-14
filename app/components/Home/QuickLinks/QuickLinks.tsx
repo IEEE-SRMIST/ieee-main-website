@@ -17,13 +17,17 @@ const Social: React.FC<SocialProps> = ({ imageSrc, name, desp, link }) => {
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
-
     return (
         <div
-            className='relative rounded-lg overflow-hidden mx-10'
+            className={`relative rounded-lg overflow-hidden mx-10 bg-gray-300 ${
+                isHovered ? 'transform scale-100' : 'transform scale-110'
+            } h-56 transition-all duration-300 ease-in-out`}
             style={{
                 background: '#DFE3E9',
-                transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                transform: isHovered ? 'scale(1.2)' : 'scale(1)',
                 transition: 'transform 0.3s ease-in-out',
             }}
             onMouseEnter={handleMouseEnter}
@@ -33,14 +37,19 @@ const Social: React.FC<SocialProps> = ({ imageSrc, name, desp, link }) => {
                 <img
                     src={imageSrc}
                     alt="Logo"
-                    className={`h-8 ${isHovered ? 'grayscale-0' : 'grayscale'} transition duration-200`}
+                    className={`${isHovered ? 'grayscale-0 h-7' : 'grayscale h-12'} transition duration-200`}
                 />
-                <h3 className="font-bold text-gray-800 block mt-3 text-lg">{name}</h3>
-                <p className="text-sm text-gray-500 lg:text-base mt-2">{desp}</p>
+                <h3 className={`font-bold text-gray-800 block mt-3 ${ isHovered ? 'text-base' : 'text-lg'}`}>
+                    {name}
+                </h3>
+                {isHovered && (
+                    <p className="text-sm text-gray-500 lg:text-base mt-2">{desp}</p>
+                )}
             </div>
         </div>
     );
 };
+
 
 const QuickLinks = () => {
 
@@ -75,11 +84,9 @@ const QuickLinks = () => {
         <div className="bg-green-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
             <div className="bg-py-6 sm:py-8 lg:py-12">
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    <div className="mb-10 md:mb-16">
-                        <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-                            Quick Links
-                        </h2>
-                    </div>
+                    <h2 className="text-center text-3xl font-cinzel font-bold text-gray-800 mb-10 md:mb-16 lg:text-5xl">
+                        Quick Links
+                    </h2>
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                         {socials.map((social, index) => (
                             <Social key={index} imageSrc={social.imageSrc} name={social.name} desp={social.desp} link={social.link} />
