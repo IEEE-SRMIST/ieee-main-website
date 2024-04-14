@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
       <Testimonial />
       <FAQ />
       <SponsorList />
-
+      <LatestNews/>
       <Footer />
     </div>
   );
