@@ -21,14 +21,14 @@ const Social: React.FC<SocialProps> = ({ imageSrc, name, desp, link }) => {
         <div
             className={`relative rounded-lg overflow-hidden mx-10 bg-gray-300 ${
                 isHovered ? 'transform scale-100' : 'transform scale-110'
-            } h-56 transition-all duration-300 ease-in-out`}
+            } h-56 transition-all duration-300 ease-in-out cursor-pointer`}
             style={{
                 background: '#DFE3E9',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 transform: isHovered ? 'scale(1.2)' : 'scale(1)',
-                transition: 'transform 0.3s ease-in-out',
+                transition: 'transform 0.4s ease-in-out',
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -37,19 +37,23 @@ const Social: React.FC<SocialProps> = ({ imageSrc, name, desp, link }) => {
                 <img
                     src={imageSrc}
                     alt="Logo"
-                    className={`${isHovered ? 'grayscale-0 h-7' : 'grayscale h-12'} transition duration-200`}
+                    className={`${isHovered ? 'grayscale-0 h-7' : 'grayscale h-12'} transition-all duration-400`}
                 />
-                <h3 className={`font-bold text-gray-800 block mt-3 ${ isHovered ? 'text-base' : 'text-lg'}`}>
+                <h3 className={`font-bold text-gray-800 block mt-3 ${ isHovered ? 'text-base' : 'text-lg'} transition-all duration-400`}>
                     {name}
                 </h3>
-                {isHovered && (
-                    <p className="text-sm text-gray-500 lg:text-base mt-2">{desp}</p>
-                )}
+                
+                <p
+                    className={`text-sm text-gray-500 lg:text-base mt-2 ${
+                        isHovered ? 'opacity-100' : 'opacity-0 h-0'
+                    } transition-all duration-600 ease-in-out`}
+                >
+                    {desp}
+                </p>
             </div>
         </div>
     );
 };
-
 
 const QuickLinks = () => {
 
