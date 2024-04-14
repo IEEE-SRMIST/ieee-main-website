@@ -88,20 +88,54 @@ const SponsorList = () => {
             <section className="bg-white text-black mt-16 mb-16 overflow-hidden">
                 <div className="sponsors-container">
                     <div className="sponsor">
-                        <img className="sponsor-logo" src="/img/Sponsors/Axure.svg" alt="COMSOC" />
+                        <img className="sponsor-logo" src="/img/Sponsors/badelog.png" alt="COMSOC" />
                     </div>
                     <div className="sponsor">
-                        <img className="sponsor-logo" src="/img/Sponsors/xyzDomain.svg" alt="IAS" />
+                        <img className="sponsor-logo" src="/img/Sponsors/clerky.png" alt="IAS" />
                     </div>
                     <div className="sponsor">
-                        <img className="sponsor-logo" src="/img/Sponsors/InterviewCake.svg" alt="CTS" />
+                        <img className="sponsor-logo" src="/img/Sponsors/Den.png" alt="CTS" />
                     </div>
                     <div className="sponsor">
-                        <img className="sponsor-logo" src="/img/Sponsors/InterviewCake.svg" alt="CTS" />
+                        <img className="sponsor-logo" src="/img/Sponsors/devfolio.png" alt="CTS" />
                     </div>
                     <div className="sponsor">
-                        <img className="sponsor-logo" src="/img/Sponsors/InterviewCake.svg" alt="CTS" />
+                        <img className="sponsor-logo" src="/img/Sponsors/echoAR.png" alt="CTS" />
                     </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/egghead.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/framer.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/InterviewCake.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/matic.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/password.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/pingwing.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/replit.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/streamyard.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/tabnine-logo.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/tezos.png" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/Wolfram_Language.png" alt="CTS" />
+                    </div>
+                    
                 </div>
             </section>
 
