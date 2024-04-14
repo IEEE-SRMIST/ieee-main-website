@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b py-4 sm:py-0 dark:bg-black bg-white sticky top-0">
-      <nav className="relative max-w-9xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-12 h-20" aria-label="Global">
+      <nav className="relative max-w-9xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-12 h-16" aria-label="Global">
         <div className="flex items-end justify-between">
           <a href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl text-black dark:text-white" aria-label="logo">
             <img
@@ -56,7 +56,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div id="navbar-collapse-with-animation" className="hs-collapse bg-white hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
             <a className="font-medium text-blue-600 sm:py-6 dark:text-blue-600" href="#" aria-current="page">MAIN</a>
             <a className="font-medium text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">ABOUT</a>

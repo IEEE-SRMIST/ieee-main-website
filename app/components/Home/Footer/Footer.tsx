@@ -51,7 +51,7 @@ const Footer = () => {
   return (
     <>
       {/* ========== FOOTER ========== */}
-      <footer className="mt-auto w-full py-4 px-4 sm:px-6 lg:px-8 mx-auto dark:bg-black">
+      <footer className="mt-auto w-full py-0 px-2 sm:px-6 lg:px-8 mx-auto dark:bg-black">
         <div className="overflow-hidden w-full my-10">
           <div className="marquee flex flex-row">
             <img
@@ -61,17 +61,17 @@ const Footer = () => {
                   : "/assests/footer/logo_light.png"
               }
               alt="IEEE SRM SB logo"
-              className="w-54 xl:w-54 h-[3rem]"
+              className=" h-[1.7rem] lg:w-54 lg:h-[3rem]"
             />
           </div>
         </div>
-        <div className="mx-auto bg-[#D0DAF5] w-[75%] py-[4rem] rounded-lg">
+        <div className="mx-auto bg-[#D0DAF5] w-[75%] py-[1.5rem] lg:py-[4rem] rounded-lg">
           <div className="col-span-2">
             <div className="flex justify-center items-center w-[80%] mx-auto">
-              <div className="flex flex-row justify-between items-center gap-2 w-full">
-                <h4 className="text-2xl text-black">Wanna Connect with Us?</h4>
+              <div className="flex flex-col lg:flex-row justify-between items-center gap-2 w-full">
+                <h4 className="text-xl mb-2 lg:mb-0 lg:text-2xl text-black">Wanna Connect with Us?</h4>
                 <form>
-                  <div className=" flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-black rounded-lg p-2 dark:bg-gray-800">
+                  <div className=" flex flex-row items-center gap-2 sm:flex-row sm:gap-3 bg-black rounded-lg p-2 dark:bg-gray-800">
                     <div className="w-full">
                       <label htmlFor="hero-input" className="sr-only">
                         Search
@@ -80,12 +80,12 @@ const Footer = () => {
                         type="text"
                         id="hero-input"
                         name="hero-input"
-                        className="py-4 px-6 pr-[7rem] bg-black block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600"
+                        className="py-2 px-3 pr-[1rem] lg:py-4 lg:px-6 lg:pr-[7rem] bg-black block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-transparent text-white dark:text-white dark:focus:ring-gray-600"
                         placeholder="Enter your email"
                       />
                     </div>
                     <a
-                      className="w-full sm:w-auto whitespace-nowrap py-3.5 px-[1.9rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#188CFF] text-black hover:bg-[#D0DAF5] disabled:opacity-50 disabled:pointer-events-none"
+                      className="w-auto whitespace-nowrap py-2.5 px-[1rem] lg:py-3.5 lg:px-[1.9rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#188CFF] text-black hover:bg-[#D0DAF5] disabled:opacity-50 disabled:pointer-events-none"
                       href="#"
                     >
                       Send
@@ -97,28 +97,28 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center mt-10 mb-4">
-          <div className="grid grid-cols-5 gap-6">
-            <div className="col-span-1">
+          <div className="grid grid-cols-6 lg:grid-cols-5 gap-2">
+            <div className="col-span-2 lg:col-span-1">
               <h4 className="text-[1rem] text-gray-900 text-center dark:text-gray-100">
                 IEEE
               </h4>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <h4 className="text-[1rem]  text-gray-900 text-center dark:text-gray-100">
                 About
               </h4>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <h4 className="text-[1rem]  text-gray-900 text-center dark:text-gray-100">
                 Gallery
               </h4>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-3 lg:col-span-1">
               <h4 className="text-[1rem]  text-gray-900 text-center dark:text-gray-100">
                 Activity
               </h4>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-3 lg:col-span-1">
               <h4 className="text-[1rem]  text-gray-900 text-center dark:text-gray-100">
                 Domains
               </h4>
@@ -127,28 +127,28 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center mb-7">
-          <div className="grid grid-cols-5 gap-6">
-            <div className="col-span-1">
+          <div className="grid grid-cols-6 lg:grid-cols-5 gap-2">
+            <div className="col-span-2 lg:col-span-1">
               <h4 className="text-[1rem]   text-gray-900 text-center dark:text-gray-100">
                 Events
               </h4>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <h4 className="text-[1rem]   text-gray-900 text-center dark:text-gray-100">
                 Testimonials
               </h4>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <h4 className="text-[1rem]   text-gray-900 text-center dark:text-gray-100">
                 Sponsor
               </h4>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-3 lg:col-span-1">
               <h4 className="text-[1rem]   text-gray-900 text-center dark:text-gray-100">
                 FAQs
               </h4>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-3 lg:col-span-1">
               <h4 className="text-[1rem]  text-gray-900 text-center dark:text-gray-100">
                 Contact us
               </h4>
@@ -156,7 +156,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-auto w-full max-w-[85rem] py-0 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="mt-auto w-full max-w-[85rem] py-0 pb-6 px-4 sm:px-6 lg:px-8 mx-auto">
           <div className="text-center">
             <div className="inline-flex justify-center items-center">
               <img

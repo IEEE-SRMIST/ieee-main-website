@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import "./SponsorsList.css";
 
 const SponsorList = () => {
     return (
         <div>
 
 
-            <div className="bg-red-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+            {/* <div className="bg-red-100 max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
 
                 <div className="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
                     <h2 className="text-gray-600 dark:text-gray-400">
@@ -81,7 +82,30 @@ const SponsorList = () => {
                         />
                     </svg>
                 </div>
-            </div>
+            </div> */}
+        <div >
+
+            <section className="bg-white text-black mt-16 mb-16 overflow-hidden">
+                <div className="sponsors-container">
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/Axure.svg" alt="COMSOC" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/xyzDomain.svg" alt="IAS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/InterviewCake.svg" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/InterviewCake.svg" alt="CTS" />
+                    </div>
+                    <div className="sponsor">
+                        <img className="sponsor-logo" src="/img/Sponsors/InterviewCake.svg" alt="CTS" />
+                    </div>
+                </div>
+            </section>
+
+        </div>
 
 
         </div>
