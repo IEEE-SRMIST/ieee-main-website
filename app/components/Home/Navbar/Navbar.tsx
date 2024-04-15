@@ -8,7 +8,7 @@ const Navbar = () => {
     if (typeof window !== 'undefined') {
       const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
       setIsDarkMode(darkModeMediaQuery.matches);
-      const handleChange = (e) => {
+      const handleChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => {
         setIsDarkMode(e.matches);
       };
       darkModeMediaQuery.addEventListener('change', handleChange);
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b py-4 sm:py-0 dark:bg-black bg-white sticky top-0">
-      <nav className="relative max-w-9xl w-full mx-auto sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-12 h-15 lg:h-20" aria-label="Global">
+      <nav className="relative max-w-9xl w-full mx-auto sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-12 h-15 md:h-20 lg:h-20" aria-label="Global">
         <div className="flex items-end justify-between">
           <a href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl text-black dark:text-white" aria-label="logo">
             <img
@@ -42,54 +42,54 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div id="navbar-collapse-with-animation" className="hs-collapse bg-white hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div id="navbar-collapse-with-animation" className="hs-collapse bg-white dark:bg-black hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
           <div className="flex flex-col gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle bg-[#CFD4DE] font-medium lg:bg-white md:bg-white text-blue-600 sm:py-6 dark:text-blue-600" href="#" aria-current="page">
+            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle bg-[#CFD4DE] font-medium sm:bg-white lg:bg-white dark:bg-black text-blue-600 sm:py-6 dark:text-blue-600" href="#" aria-current="page">
               <span className="sm:hidden inline">
                 <img
                   src="/assests/icons/home-icon.png"
                   alt="Home"
-                  className="inline-block h-6 w-6 mr-2"
+                  className="inline-block h-6 w-6 mr-2 dark:bg-white"
                 />
               </span>
               MAIN
             </a>
-            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle bg-[#DFE3E9] font-medium lg:bg-white md:bg-white text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">
+            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle sm:bg-white dark:bg-black bg-[#DFE3E9] font-medium lg:bg-white md:bg-white text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">
               <span className="sm:hidden inline">
                 <img
                   src="/assests/icons/about-icon.png"
                   alt="About"
-                  className="inline-block h-6 w-6 mr-2"
+                  className="inline-block h-6 w-6 mr-2 dark:bg-white"
                 />
               </span>
               ABOUT
             </a>
-            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle bg-[#CFD4DE] lg:bg-white md:bg-white font-medium text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">
+            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle sm:bg-white dark:bg-black bg-[#CFD4DE] lg:bg-white md:bg-white font-medium text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">
               <span className="sm:hidden inline">
                 <img
                   src="/assests/icons/events-icon.png"
                   alt="Events"
-                  className="inline-block h-6 w-6 mr-2"
+                  className="inline-block h-6 w-6 mr-2 dark:bg-white"
                 />
               </span>
               EVENTS
             </a>
-            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle bg-[#DFE3E9] font-medium lg:bg-white md:bg-white text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">
+            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle sm:bg-white dark:bg-black bg-[#DFE3E9] font-medium lg:bg-white md:bg-white text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">
               <span className="sm:hidden inline">
                 <img
                   src="/assests/icons/members-icon.png"
                   alt="Members"
-                  className="inline-block h-6 w-6 mr-2"
+                  className="inline-block h-6 w-6 mr-2 dark:bg-white"
                 />
               </span>
               MEMBERS
             </a>
-            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle bg-[#CFD4DE] font-medium lg:bg-white md:bg-white text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">
+            <a className="py-5 md:py-0 lg:py-0  pl-4 md:pl-0 lg:pl-0 align-middle sm:bg-white dark:bg-black bg-[#CFD4DE] font-medium lg:bg-white md:bg-white text-black hover:text-blue-600 sm:py-6 dark:text-white dark:hover:text-blue-600" href="#">
               <span className="sm:hidden inline">
                 <img
                   src="/assests/icons/contact-icon.png"
                   alt="Contact"
-                  className="inline-block h-6 w-6 mr-2"
+                  className="inline-block h-6 w-6 mr-2 dark:bg-white"
                 />
               </span>
               CONTACT
