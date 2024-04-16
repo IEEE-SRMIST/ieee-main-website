@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const FAQ = () => {
     const [activeAccordion, setActiveAccordion] = useState(null);
@@ -9,7 +10,12 @@ const FAQ = () => {
 
     return (
         <div className={`dark:bg-black bg-gray-300`}>
-           <div className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+           <motion.div 
+                className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+            >
                 <div className="grid md:grid-cols-5 gap-10">
                     <div className="md:col-span-2">
                         <div className="max-w-xs">
@@ -26,14 +32,21 @@ const FAQ = () => {
                     <div className="md:col-span-3">
                         <div className="hs-accordion-group divide-y divide-gray-200 dark:divide-gray-700">
                             {faqData.map((item, index) => (
-                               <div key={index} className="hs-accordion pt-6 pb-3 mb-4 dark:bg-black bg-[#cfd4de]" style={{ borderRadius: '10px', boxShadow: activeAccordion === index ? '0 0 10px rgba(0, 0, 255, 0.5)' : 'none' }}>
+                               <motion.div 
+                                    key={index} 
+                                    className="hs-accordion pt-6 pb-3 mb-4 dark:bg-black bg-[#cfd4de]" 
+                                    style={{ borderRadius: '10px', padding: '20px', overflow: 'hidden' }}
+                                    initial={{ opacity: 0, y: 20 * index }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                                >
                                     <button
                                         className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-700 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                         aria-controls={`accordion-content-${index}`}
                                         onClick={() => toggleAccordion(index)}
                                     >
                                         {item.question}
-                                        <svg
+                                        <motion.svg
                                             className={`hs-accordion-active:${activeAccordion === index ? 'block' : 'hidden'} flex-shrink-0 w-5 h-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400`}
                                             xmlns="http://www.w3.org/2000/svg"
                                             width={24}
@@ -44,23 +57,26 @@ const FAQ = () => {
                                             strokeWidth={2}
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
+                                            initial={{ rotate: 0 }}
+                                            animate={{ rotate: activeAccordion === index ? 180 : 0 }}
+                                            transition={{ duration: 0.3 }}
                                         >
                                             <path d="m18 15-6-6-6 6" />
-                                        </svg>
+                                        </motion.svg>
                                     </button>
-                                    <div
+                                    <motion.div
                                         id={`accordion-content-${index}`}
                                         className={`hs-accordion-content ${activeAccordion === index ? 'block' : 'hidden'} w-full overflow-hidden transition-[height] duration-300`}
                                         aria-labelledby={`accordion-heading-${index}`}
                                     >
                                         <p className="text-gray-600 dark:text-gray-400 mx-1 md:mx-2 lg:mx-3">{item.answer}</p>
-                                    </div>
-                                </div>
+                                    </motion.div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };
