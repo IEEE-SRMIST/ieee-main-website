@@ -18,6 +18,7 @@ const Testimonial = () => {
                 >
                     TESTIMONIALS
                 </motion.div>
+                {/*Testimonials SET1 */}
                 <div className="flex flex-col md:flex-row justify-start items-start gap-5">
                     {/* Profile Picture with Testimonial */}
                     <motion.div 
@@ -28,7 +29,7 @@ const Testimonial = () => {
                     >
                         <div className="relative w-[120px] h-[120px]">
                             <div className="absolute w-full h-full bg-gray-300 rounded-full" />
-                            <img className="absolute w-full h-full object-cover rounded-full" src="/img/pfp.jpg" alt="Profile Picture" />
+                            <img className="absolute w-full h-full object-cover rounded-full" src="/img/Director 1.jpg" alt="Profile Picture" />
                         </div>
                         <div className="text-right">
                             <span className="text-black dark:text-white text-base font-normal font-sora leading-[30px]">- Nishanth Rao<br /></span>
@@ -66,7 +67,7 @@ const Testimonial = () => {
                     >
                         <div className="relative w-[120px] h-[120px]">
                             <div className="absolute w-full h-full bg-gray-300 rounded-full" />
-                            <img className="absolute w-full h-full object-cover rounded-full" src="/img/pfp.jpg" alt="Profile Picture" />
+                            <img className="absolute w-full h-full object-cover rounded-full" src="/img/Chairperson 1.png" alt="Profile Picture" />
                         </div>
                         <div className="text-right">
                             <span className="text-black dark:text-white text-base font-normal font-sora leading-[30px]">-Rohan Kumar<br /></span>
@@ -74,12 +75,72 @@ const Testimonial = () => {
                         </div>
                     </motion.div>
                 </div>
+                {/* TESTIMONIALS SET2
+                <div className="flex flex-col md:flex-row justify-start items-start gap-5">
+                    {/* Profile Picture with Testimonial 
+                    <motion.div 
+                        className="w-full p-6 bg-white bg-opacity-0 flex flex-col justify-start items-center gap-5"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.5, duration: 0.5 }}
+                    >
+                        <div className="relative w-[120px] h-[120px]">
+                            <div className="absolute w-full h-full bg-gray-300 rounded-full" />
+                            <img className="absolute w-full h-full object-cover rounded-full" src="/img/Joint-Secretary 1.png" alt="Profile Picture" />
+                        </div>
+                        <div className="text-right">
+                            <span className="text-black dark:text-white text-base font-normal font-sora leading-[30px]">- Dipanwita Saha<br /></span>
+                            <span className="text-black dark:text-white text-base font-semibold font-sora leading-[30px]">Joint Secretary</span>
+                        </div>
+                    </motion.div>
+                    
+                    <motion.div 
+                        className="w-full p-6 bg-gray-300 rounded-lg shadow border-2 border-white dark:border-gray-500 justify-center items-start gap-5"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.7, duration: 0.5 }}
+                    >
+                        <div className="text-justify text-black dark:text-white text-base font-normal font-sora leading-[30px]">
+                            "Being actively involved in the IEEE Student Branch has not only expanded my technical knowledge but also improved my leadership and communication skills. The supportive environment within the branch encourages members to step out of their comfort zones and pursue their passions."
+                        </div>
+                    </motion.div>
+                    
+                    <motion.div 
+                        className="w-full p-6 bg-gray-300 rounded-lg shadow border-2 border-white dark:border-gray-500 justify-center items-start gap-5"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.9, duration: 0.5 }}
+                    >
+                        <div className="text-black dark:text-white text-base font-normal font-sora leading-[30px]">
+                            "The IEEE Student Branch has provided me with a platform to connect with peers who share similar interests and ambitions. Through collaborative projects and discussions, I've gained a deeper understanding of complex technical concepts and developed a network of contacts that will benefit me in my future career."
+                        </div>
+                    </motion.div>
+                    
+                    <motion.div 
+                        className="w-full p-6 bg-white bg-opacity-0 flex flex-col justify-start items-center gap-5"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 1.1, duration: 0.5 }}
+                    >
+                        <div className="relative w-[120px] h-[120px]">
+                            <div className="absolute w-full h-full bg-gray-300 rounded-full" />
+                            <img className="absolute w-full h-full object-cover rounded-full" src="/img/Secretary 1.png" alt="Profile Picture" />
+                        </div>
+                        <div className="text-right">
+                            <span className="text-black dark:text-white text-base font-normal font-sora leading-[30px]">-Sampurna Sahoo<br /></span>
+                            <span className="text-black dark:text-white text-base font-semibold font-sora leading-[30px]">Secretary</span>
+                        </div>
+                    </motion.div>
+                </div> */}
+                
             </motion.div>
         </div>
     );
 };
 
 export default Testimonial;
+
+
 
 
 
