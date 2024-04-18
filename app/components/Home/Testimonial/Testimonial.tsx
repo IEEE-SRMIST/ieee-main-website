@@ -66,21 +66,21 @@ const Testimonial = () => {
                             {testimonialSet1.map((testimonial, index) => (
                                 <motion.div 
                                     key={index}
-                                    className="w-full p-6 bg-white bg-opacity-0 flex flex-col justify-start items-center gap-5"
+                                    className="w-full p-6 bg-white rounded-lg shadow border-2 border-white dark:border-gray-500 justify-center items-center flex flex-col gap-5"
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.5 * (index + 1), duration: 0.5 }}
                                 >
-                                    <div className="relative w-[120px] h-[120px]">
+                                    <div className="relative w-[120px] h-[120px] flex items-center justify-center">
                                         <div className="absolute w-full h-full bg-gray-300 rounded-full" />
-                                        <img className="absolute w-full h-full object-cover rounded-full" src={testimonial.image} alt="Profile Picture" />
+                                        <img className="w-full h-full object-cover rounded-full" src={testimonial.image} alt="Profile Picture" />
+                                    </div>
+                                    <div className="text-justify text-black dark:text-white text-base font-normal font-sora leading-[30px]">
+                                        "{testimonial.text}"
                                     </div>
                                     <div className="text-right">
                                         <span className="text-black dark:text-white text-base font-normal font-sora leading-[30px]">- {testimonial.name}<br /></span>
                                         <span className="text-black dark:text-white text-base font-semibold font-sora leading-[30px]">{testimonial.position}</span>
-                                    </div>
-                                    <div className="text-justify text-black dark:text-white text-base font-normal font-sora leading-[30px]">
-                                        "{testimonial.text}"
                                     </div>
                                 </motion.div>
                             ))}
@@ -94,26 +94,34 @@ const Testimonial = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
+                        <motion.div 
+                            className="text-black dark:text-white text-2xl font-bold font-cinzel leading-[30px]"
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3, duration: 0.5 }}
+                        >
+                            TESTIMONIALS
+                        </motion.div>
                         {/* Testimonials SET2 */}
                         <div className="flex flex-col md:flex-row justify-start items-start gap-5">
                             {testimonialSet2.map((testimonial, index) => (
                                 <motion.div 
                                     key={index}
-                                    className="w-full p-6 bg-white bg-opacity-0 flex flex-col justify-start items-center gap-5"
+                                    className="w-full p-6 bg-white rounded-lg shadow border-2 border-white dark:border-gray-500 justify-center items-center flex flex-col gap-5"
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.5 * (index + 1), duration: 0.5 }}
                                 >
-                                    <div className="relative w-[120px] h-[120px]">
+                                    <div className="relative w-[120px] h-[120px] flex items-center justify-center">
                                         <div className="absolute w-full h-full bg-gray-300 rounded-full" />
-                                        <img className="absolute w-full h-full object-cover rounded-full" src={testimonial.image} alt="Profile Picture" />
+                                        <img className="w-full h-full object-cover rounded-full" src={testimonial.image} alt="Profile Picture" />
+                                    </div>
+                                    <div className="text-justify text-black dark:text-white text-base font-normal font-sora leading-[30px]">
+                                        "{testimonial.text}"
                                     </div>
                                     <div className="text-right">
                                         <span className="text-black dark:text-white text-base font-normal font-sora leading-[30px]">- {testimonial.name}<br /></span>
                                         <span className="text-black dark:text-white text-base font-semibold font-sora leading-[30px]">{testimonial.position}</span>
-                                    </div>
-                                    <div className="text-justify text-black dark:text-white text-base font-normal font-sora leading-[30px]">
-                                        "{testimonial.text}"
                                     </div>
                                 </motion.div>
                             ))}
@@ -126,6 +134,8 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+
+
 
 
 
