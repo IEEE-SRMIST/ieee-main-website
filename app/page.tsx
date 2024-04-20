@@ -16,16 +16,17 @@ import SponsorList from './components/Home/SponsorList/SponsorList';
 import Footer from './components/Home/Footer/Footer';
 
 import '../app/globals.css';
+import EventTimeline from './components/Home/PopularEvents/EventTimeline';
 
-const HomePage: React.FC = () => {
+function HomePage() {
   return (
     <div>
-      <Navbar />
 
       <Hero />
       <AboutClub />
       <QuickLinks />
-      <PopularEvents />
+      <GallerySlide />
+      <EventTimeline />
       <RecentBlogs />
       <Testimonial />
       <FAQ />
@@ -34,6 +35,6 @@ const HomePage: React.FC = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default HomePage;

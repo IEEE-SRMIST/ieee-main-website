@@ -1,0 +1,37 @@
+
+.swiper {
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 600px;
+  max-height: 600px;
+}
+.heading{
+    color: #fff ;   /*000 #fff*/
+    font-family: Cinzel;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-container{
+    /*light #DFE3E9 dark #0D1925;*/
+    background: radial-gradient(circle, #0066ff, #0D1925, #0D1925);
+}
+.swiper-container img{
+    box-shadow: 0 0 15px #0128B8;
+    transition: 0.4s ease-in-out;
+}
+.swiper-container img:hover {
+        box-shadow: 0 0 50px #0066ff;
+}
