@@ -31,7 +31,7 @@ function HomePage() {
       <Testimonial />
       <FAQ />
       <SponsorList />
-
+      <LatestNews/>
       <Footer />
     </div>
   );
