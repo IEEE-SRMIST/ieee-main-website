@@ -1,0 +1,41 @@
+body{
+    color: #fff;
+}
+.events-container{
+    background-color: #0D1017;
+    padding: 3rem;
+    background: radial-gradient(circle, #0066ff, #0D1925, #0D1925);
+
+}
+.events-main{
+    background-color: #0D1017;
+    border-radius: 100px;
+    padding: 10px;
+    color: white ;
+}
+.events-section{
+    background-color: #0D1925;
+}
+.heading{
+    color: #fff ;   /*000 #fff*/
+    font-family: Cinzel;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.vertical-timeline-element-content{
+    box-shadow: 0 0 15px #0128B8;
+    transition: 0.4s ease-in-out;
+    background-color: #0D1017;
+}
+.vertical-timeline-element-content>img{
+    position: relative;
+    max-width: 47rem;
+    max-height: 470rem;
+}
+.vertical-timeline-element-content:hover{
+    box-shadow: 0 0 50px #0066ff;
+}

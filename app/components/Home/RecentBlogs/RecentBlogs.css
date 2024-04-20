@@ -1,0 +1,36 @@
+.blog-container{
+    background-image: radial-gradient(circle, #0066ff, #0D1925, #0D1925);
+}
+.blog-main{
+    background-color: #0D1017;
+    border-radius: 100px;
+    padding: 3rem;
+    transition: 0.4s ease-in-out;
+    color: white ;  /*000 #fff*/
+}
+.blog-main:hover{
+    box-shadow: 0 0 50px #0066ff;
+}
+.heading{
+    color: #fff ;   /*000 #fff*/
+    font-family: Cinzel;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.card{
+    margin: 10px;
+    padding: 3rem;
+    background-color: #0D1017;
+    border-radius: 100px;
+    transition: 0.4s ease-in-out;
+}
+.card>img{
+    border-radius: 50px;
+}
+.card:hover{
+    box-shadow: 0 0 50px #0066ff;
+}
