@@ -9,10 +9,11 @@ function RecentBlogs(): React.JSX.Element {
             <div className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
                 <h1 className='text-5xl font-bold tracking-wider heading'>BLOGS</h1>
                 <div className="mx-auto mb-10 items-center justify-center text-center blog-main">
-                    <h4 className="mx-auto max-w-[64rem] font-sans font-normal text-sm sm:text-lg">
+                    <h4 className="mx-auto max-w-[64rem] font-sans font-normal text-sm sm:text-lg"> 
                         Welcome to the IEEE SRM SB Blog! Here, you'll find a collection of insightful articles, informative posts, and thought-provoking content curated by our members and contributors. Our blog covers a wide range of topics related to electrical engineering, electronics, computer science, and technology trends. Whether you're a student, professional, or simply curious about the latest advancements in the field, we invite you to explore our blog and join the conversation!
                     </h4>
                 </div>
+                
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 card-container">
                     <div className="card">
