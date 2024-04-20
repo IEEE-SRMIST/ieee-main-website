@@ -40,7 +40,7 @@ const Footer = () => {
         "(prefers-color-scheme: dark)"
       );
       setIsDarkMode(darkModeMediaQuery.matches);
-      const handleChange = (e) => {
+      const handleChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => {
         setIsDarkMode(e.matches);
       };
       darkModeMediaQuery.addEventListener("change", handleChange);
