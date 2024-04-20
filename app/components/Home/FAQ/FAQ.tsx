@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const FAQ = () => {
     const [activeAccordion, setActiveAccordion] = useState(null);
@@ -8,8 +9,13 @@ const FAQ = () => {
     };
 
     return (
-        <div style={{ background: '#dfe3e9' }}>
-            <div className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10">
+        <div className={`dark:bg-black bg-gray-300`}>
+           <motion.div 
+                className="max-w-screen-2xl mx-auto px-4 py-6 md:px-6 md:py-8 xl:px-8 xl:py-10"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+            >
                 <div className="grid md:grid-cols-5 gap-10">
                     <div className="md:col-span-2">
                         <div className="max-w-xs">
@@ -26,14 +32,21 @@ const FAQ = () => {
                     <div className="md:col-span-3">
                         <div className="hs-accordion-group divide-y divide-gray-200 dark:divide-gray-700">
                             {faqData.map((item, index) => (
-                                <div key={index} className="hs-accordion pt-6 pb-3" style={{ background: '#cfd4de', borderRadius: '10px', boxShadow: activeAccordion === index ? '0 0 10px rgba(0, 0, 255, 0.5)' : 'none' }}>
+                               <motion.div 
+                                    key={index} 
+                                    className="hs-accordion pt-6 pb-3 mb-4 dark:bg-black bg-[#cfd4de]" 
+                                    style={{ borderRadius: '10px', padding: '20px', overflow: 'hidden' }}
+                                    initial={{ opacity: 0, y: 20 * index }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                                >
                                     <button
-                                        className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                                        className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-700 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                         aria-controls={`accordion-content-${index}`}
                                         onClick={() => toggleAccordion(index)}
                                     >
                                         {item.question}
-                                        <svg
+                                        <motion.svg
                                             className={`hs-accordion-active:${activeAccordion === index ? 'block' : 'hidden'} flex-shrink-0 w-5 h-5 text-gray-600 group-hover:text-gray-500 dark:text-gray-400`}
                                             xmlns="http://www.w3.org/2000/svg"
                                             width={24}
@@ -44,51 +57,74 @@ const FAQ = () => {
                                             strokeWidth={2}
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
+                                            initial={{ rotate: 0 }}
+                                            animate={{ rotate: activeAccordion === index ? 180 : 0 }}
+                                            transition={{ duration: 0.3 }}
                                         >
                                             <path d="m18 15-6-6-6 6" />
-                                        </svg>
+                                        </motion.svg>
                                     </button>
-                                    <div
+                                    <motion.div
                                         id={`accordion-content-${index}`}
                                         className={`hs-accordion-content ${activeAccordion === index ? 'block' : 'hidden'} w-full overflow-hidden transition-[height] duration-300`}
                                         aria-labelledby={`accordion-heading-${index}`}
                                     >
-                                        <p className="text-gray-600 dark:text-gray-400">{item.answer}</p>
-                                    </div>
-                                </div>
+                                        <p className="text-gray-600 dark:text-gray-400 mx-1 md:mx-2 lg:mx-3">{item.answer}</p>
+                                    </motion.div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };
 
 const faqData = [
     {
-        question: "Can I cancel at anytime?",
-        answer: "Yes, you can cancel anytime no questions are asked while you cancel but we would highly appreciate if you will give us some feedback."
+        question: "What is IEEE ?",
+        answer: "IEEE stands for the Institute of Electrical and Electronics Engineers. It's a professional association for electrical, electronic, and computing technologies, dedicated to advancing innovation and technological excellence."
     },
     {
-        question: "My team has credits. How do we use them?",
-        answer: "Once your team signs up for a subscription plan. This is where we sit down, grab a cup of coffee and dial in the details."
+        question: "Who can join the IEEE SRM SB?  ",
+        answer: "Any student enrolled in SRMIST with an interest in electrical, electronic, or computing engineering fields can join the IEEE SRM SB."
     },
     {
-        question: "How does Preline's pricing work?",
-        answer: "Our subscriptions are tiered. Understanding the task at hand and ironing out the wrinkles is key."
+        question: "What are the benefits of joining the IEEE SRM SB?  ",
+        answer: "Joining IEEE provides access to a vast network of professionals and resources, including technical publications, conferences, workshops, and career development opportunities."
     },
     {
-        question: "How secure is Preline?",
-        answer: "Protecting the data you trust to Preline is our first priority. This part is really crucial in keeping the project in line to completion."
+        question: "Does the IEEE student branch collaborate with other student organizations?  ",
+        answer: "Yes, we actively collaborate with other student organizations on campus and in the community to organize joint events, share resources, and foster interdisciplinary collaborations.  "
     },
     {
-        question: "How do I get access to a theme I purchased?",
-        answer: "If you lose the link for a theme you purchased, don't panic! We've got you covered. You can login to your account, tap your avatar in the upper right corner, and tap Purchases. If you didn't create a login or can't remember the information, you can use our handy Redownload page, just remember to use the same email you originally made your purchases with."
+        question: "Are there any membership fees for joining the IEEE SRM SB?",
+        answer: "No, there is no membership fees associated with joining IEEE SRM Student Branch."
     },
     {
-        question: "Upgrade License Type",
-        answer: "There may be times when you need to upgrade your license from the original type you purchased and we have a solution that ensures you can apply your original purchase cost to the new license purchase."
+        question: "Are there any membership fees for joining the IEEE SRM SB?  ",
+        answer: "No, there is no membership fees associated with joining IEEE SRM Student Branch."
+    },
+    {
+        question: "Are there any membership fees for joining the IEEE SRM SB?",
+        answer: "No, there is no membership fees associated with joining IEEE SRM Student Branch."
+    },
+    {
+        question: "How can I get involved in the activities of the IEEE SRM SB?",
+        answer: "You can get involved by attending events, volunteering to organize activities, joining committees, or running for leadership positions within the SRM SB."
+    },
+    {
+        question: "Does the IEEE SRM SB offer any scholarships or grants?",
+        answer: "Yes, IEEE offers various scholarships, awards, and grants to support students in their academic and professional endeavors."
+    },
+    {
+        question: "How can I contact the IEEE student branch for inquiries or assistance?",
+        answer: "You can contact us through the contact information provided on our website or reach out to us via email or social media channels."
+    },
+    {
+        question: "How can I stay updated with the events and activities of the IEEE SRM SB?",
+        answer: "You can stay updated by regularly visiting our website, following us on social media platforms, and subscribing to our newsletter for announcements about upcoming events and activities."
     }
 ];
 
